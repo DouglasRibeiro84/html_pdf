@@ -1,17 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="dist/css/main.css">
 </head>
 <body>
     <div class="content">
-        <h1>Titulo</h1>
+        <img src="./src/img/logo_pdf.png">
+        <h1>Orçamento</h1>
     <P>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad possimus magni suscipit aperiam aliquam harum nulla itaque doloribus? Sequi et placeat saepe nobis facilis deserunt repudiandae rerum recusandae quasi fugit.
+        <b>CLIENTE: </b> aiin
     </P>
+    <P>
+        <b>RAZÃO SOCIAL: </b> aiin
+    </P>
+    <P>
+        <b>ENDEREÇO: </b> aiin
+    </P>
+    <p>
+        <b>DATA:</b>
+        <span id="current_date"></span>
+    </p>
+    <table>
+        <thead>
+            <div class="titulo">
+                <tr>
+                    <th>
+                        <h2>INVESTIMENTO</h2>
+                    </th>
+                </tr>
+            </div>
+            <tr class="sub__menu">
+                <th>Material</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+            </tr>
+        </thead>
+    </table>
     </div>
     <button onclick="downloadPdf()">Baixar</button>
     <script src="main.js"></script>

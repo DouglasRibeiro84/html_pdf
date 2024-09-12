@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 18px;
+    padding-top: 20px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+.content {
+    max-width: 1024px; /* Ajuste a largura máxima para garantir que o conteúdo caiba na página */
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 32px;
+    
+    img {
+        display: block;
+        max-width: 100%; /* Garante que a imagem não exceda a largura do contêiner */
+        width: 400px;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+
+@media print {
+    .content {
+        page-break-inside: avoid; /* Evita quebras de página dentro do contêiner */
+        width: auto;
+    }
+    h1 {
+        font-size: 20px; /* Ajusta o tamanho da fonte para a impressão se necessário */
+        padding-top: 24px; /* Ajusta o padding para a impressão se necessário */
+        padding-bottom: 12px;
+    }
+}
+
+table{
+
+    border: 1px solid;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    tr{
+        .titulo{
+            display: flex;
+        }
+        .sub__menu{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
